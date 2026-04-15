@@ -2,7 +2,7 @@
 
 ## Visualization
 
-![Horizontal bar chart showing the highest paying City of Seattle positions by hourly wage as of March 30, 2026. The chart displays 20 job titles ranked from highest to lowest pay. City Light General Manager & CEO leads at $254.79 per hour](Highest Paying City of Seattle Positions by Hourly Wage.png)
+![Horizontal bar chart showing the highest paying City of Seattle positions by hourly wage as of March 30, 2026. The chart displays 20 job titles ranked from highest to lowest pay. City Light General Manager & CEO leads at $254.79 per hour](highest-paying-seattle-positions.png)
 
 ## Overview
 

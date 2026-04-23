@@ -2,22 +2,25 @@
 
 ## Visualization
 
-![Horizontal bar chart showing the highest paying City of Seattle positions by hourly wage as of March 30, 2026. The chart displays 20 job titles ranked from highest to lowest pay. City Light General Manager & CEO leads at $254.79 per hour](highest-paying-seattle-positions.png)
+![Pie chart showing the racial/ethnic composition of City of Seattle employees as of March 30, 2026. White is has the highest percentage at 52.9%, while Native American has the lowest at 1.27%](city-of-seattle-staff-demographics.png)
 
 ## Overview
 
-This visualization displays the top 20 highest‑paying City of Seattle job positions by average hourly wage. The data was sourced from the City of Seattle Wage Dataset and represents wages as of March 30, 2026.
+This visualization uses the City of Seattle Staff Demographics dataset to show how the city categorizes employee race and ethnicity. 
 
-To create this visualization, the dataset was aggregated by job title, the average hourly wage was calculated for each position, and the results were sorted in descending order. Only the top 20 job titles with the highest average hourly wages were retained for clarity and readability.
+I made the chart messy, to emphasize overlap on the smaller marginalized categories which fight for limited space they have.
 
-The chart highlights significant wage differences across leadership and specialized roles within the City of Seattle. The City Light General Manager & CEO is the highest‑paid position, earning $254.79 per hour, followed by other executive and public safety leadership roles.
+The dataset relies on broad, job‑application style categories that vary in specificity. Labels like “Asian,” “Two or More Races,” and “Not Specified” vaguely group very different identities together, which limits how much detail or nuance the data can provide.
+
+The chart also shows a skewed distribution, with some categories representing very small portions of the workforce. This highlights how the dataset’s structure restricts deeper demographic analysis.
+
 
 ## Links
 
-- Link to Flourish Visual: https://public.flourish.studio/visualisation/28528957/
+- Link to Flourish Visual: https://public.flourish.studio/visualisation/28657116/
 
-- Link to Data Source: https://data.seattle.gov/City-Administration/City-of-Seattle-Wage-Data/2khk-5ukd/about_data
+- Link to Data Source: https://data.seattle.gov/City-Administration/City-of-Seattle-Staff-Demographics/5avq-r9hj/about_data
 
 ## Citation
 
-City of Seattle. *City of Seattle Wage Data*. Seattle Open Data Portal.
+City of Seattle. *City of Seattle Staff Demographics*. Seattle Open Data Portal.

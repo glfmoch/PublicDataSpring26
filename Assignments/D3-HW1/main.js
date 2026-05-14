@@ -1,22 +1,20 @@
-    //Declare consts/global variables
+    //Set up dimensions
         const margin = 30;
         const width = 500;
         const height = 500;
 
 
-    //Load data and related variables
+    //Load data
         d3.csv("gaming_hours.csv").then(data => {
-            console.log("data", data)
-        //format data - coerce hours from string to number
+        //Convert hours to numbers
         data.forEach(d => {
-            d.day = d.day;
             d.hours = +d.hours;
         });
 
         const maxY = d3.max(data, d => d.hours);
 
 
-    //Scales - band scale for days, linear scale for hours
+    //Set up scales
         const xScale = d3.scaleBand()
                         .domain(data.map(d => d.day))
                         .range([margin, width - margin])
@@ -27,14 +25,14 @@
                         .range([height - margin, margin]);
 
 
-    //SVG
+    //Make the SVG
         const svg = d3.select("body")
                     .append("svg")
                     .attr("width", width)
                     .attr("height", height);
 
 
-    //Axes - create axes
+    //Set up axes
         const bottomAxis = d3.axisBottom()
                              .scale(xScale);
 
@@ -42,7 +40,7 @@
                            .scale(yScale);
 
 
-    //Bars - rect needs x, y, width, and height
+    //Draw bars
         svg.selectAll("rect")
             .data(data)
             .enter()
@@ -54,7 +52,7 @@
             .attr("fill", "darkgreen");
 
 
-    //Axes - call axes
+    //Add axes to SVG
         svg.append("g")
             .attr("transform", "translate(0," + (height - margin) + ")")
             .call(bottomAxis);
